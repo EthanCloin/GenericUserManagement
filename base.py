@@ -11,7 +11,6 @@ PASSWORD = os.environ.get("ROOT_PASSWORD")
 DB_NAME = os.environ.get("DATABASE_NAME")
 HOST = "localhost"
 
-print(f"mysql+mysqldb://{USER}:{PASSWORD}@{HOST}/{DB_NAME}")
 engine = create_engine(f"mysql+mysqldb://{USER}:{PASSWORD}@{HOST}/{DB_NAME}")
 Session = sessionmaker(bind=engine)
 Base = declarative_base()
