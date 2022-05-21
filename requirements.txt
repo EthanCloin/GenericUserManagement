@@ -6,11 +6,13 @@ greenlet==1.1.2
 h11==0.13.0
 httptools==0.4.0
 idna==3.3
+inflect==5.6.0
 mysqlclient==2.1.0
 pydantic==1.9.0
 python-dotenv==0.20.0
 PyYAML==6.0
 sniffio==1.2.0
+sqlacodegen==2.3.0
 SQLAlchemy==1.4.36
 starlette==0.19.1
 typing_extensions==4.2.0
