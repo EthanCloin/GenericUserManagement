@@ -9,7 +9,7 @@ load_dotenv()
 USER = os.environ.get("ROOT_USER")
 PASSWORD = os.environ.get("ROOT_PASSWORD")
 DB_NAME = os.environ.get("DATABASE_NAME")
-HOST = "localhost"
+HOST = os.environ.get("HOST")
 
 engine = create_engine(f"mysql+mysqldb://{USER}:{PASSWORD}@{HOST}/{DB_NAME}")
 Session = sessionmaker(bind=engine)
